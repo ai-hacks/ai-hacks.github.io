@@ -1,5 +1,4 @@
-
-## The second encounter
+## Get ready for the second encounter
 
 <ul id="countdown">
   <li id="days">
@@ -21,5 +20,40 @@
 </ul>
 
 ![]({{ site.baseurl }}/images/logo_sprint.jpg)
+
+## Members
+<ul class="members">
+{% for member in site.github.organization_members %}
+    <li>
+        <img src="{{ member.avatar_url }}">
+        <a href="{{ member.html_url }}">{{ member.login }}</a>
+    </li>
+{% endfor %}
+</ul>
+
+## Testimonials
+<div class="two-col-grid">
+    <div>
+        <blockquote class="twitter-tweet" data-lang="de" data-conversation="none" data-cards="hidden">
+            <p lang="in" dir="ltr"><a href="https://twitter.com/hashtag/ROBASO?src=hash">#ROBASO</a> Lang lebe SOA!</p>&mdash; Niels de Bruijn
+            (@nielsdb) <a href="https://twitter.com/nielsdb/status/832271682043858947">16. Februar 2017</a></blockquote>
+    </div>
+    <div>
+        <blockquote class="twitter-tweet" data-lang="de" data-conversation="none" data-cards="hidden">
+            <p lang="de" dir="ltr">Ich hätte es für 10 Mio in der Hälfte der Zeit gemacht. ¯\_(ツ)_/¯<a href="https://twitter.com/hashtag/robaso?src=hash">#robaso</a>                    <a href="https://twitter.com/Bundesagentur">@bundesagentur</a></p>&mdash; fantastokrat (@fantastokrat)
+            <a href="https://twitter.com/fantastokrat/status/832288113808519169">16. Februar 2017</a></blockquote>
+    </div>
+    <div>
+        <blockquote class="twitter-tweet" data-lang="de" data-conversation="none" data-cards="hidden">
+            <p lang="de" dir="ltr">Das <a href="https://twitter.com/hashtag/ROBASO?src=hash">#ROBASO</a> Fiasko – oder: Wenn (<a href="https://twitter.com/hashtag/agile?src=hash">#agile</a>)
+                Projekte der <a href="https://twitter.com/Bundesagentur">@Bundesagentur</a> scheitern <a href="https://t.co/jhIp4ntrDm">https://t.co/jhIp4ntrDm</a></p>&mdash;
+            Windows Developer (@win_developer) <a href="https://twitter.com/win_developer/status/834119500895170560">21. Februar 2017</a></blockquote>
+    </div>
+    <div>
+        <blockquote class="twitter-tweet" data-lang="de" data-conversation="none" data-cards="hidden">
+            <p lang="de" dir="ltr">Ein Grossprojekt der öffentlichen Hand. Business as usual! 60 Millionen Euro versenkt: <a href="https://twitter.com/hashtag/ROBASO?src=hash">#ROBASO</a>                    heise online <a href="https://t.co/gihonZ6P32">https://t.co/gihonZ6P32</a></p>&mdash; Marco Langlitz
+            (@MarcoLanglitz) <a href="https://twitter.com/MarcoLanglitz/status/833611589404196864">20. Februar 2017</a></blockquote>
+    </div>
+</div>
 
 

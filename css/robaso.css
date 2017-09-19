@@ -1,36 +1,56 @@
 .two-col-grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.two-col-grid > div { 
-    flex: 1 0 50%;
-    text-align: center;
-    padding: 1em;
+
+.two-col-grid > div {
+  flex: 1 0 50%;
+  text-align: center;
+  padding: 1em;
 }
 
 ul#countdown {
-    display: flex;
-    margin: 2em auto;
-    padding-bottom: 1em;
-    color: #000;
-    border: 1px solid #2F2F30;
-    border-width: 1px 0;
-    font-family: 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-  }
-  ul#countdown li {
-    margin: 0 -3px 0 0;
-    padding: 0;
-    display: inline-block;
-    width: 25%;
-    font-size: 72px;
-    font-size: 6vw;
-    text-align: center;
-  }
-  ul#countdown li .label {
-    color: #2F2F30;
-    font-size: 18px;
-    font-size: 1.5vw;
-    text-transform: uppercase;
-  }
+  display: flex;
+  margin: 2em auto;
+  padding-bottom: 1em;
+  color: #000;
+  border: 1px solid #2F2F30;
+  border-width: 1px 0;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+ul#countdown li {
+  margin: 0 -3px 0 0;
+  padding: 0;
+  display: inline-block;
+  width: 25%;
+  font-size: 72px;
+  font-size: 6vw;
+  text-align: center;
+}
+
+ul#countdown li .label {
+  color: #2F2F30;
+  font-size: 18px;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+}
+
+ul.members {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+ul.members > li {
+  flex: 0 0 25%;
+  padding: 1em;
+  list-style-type: none;
+  text-align: center;
+}
+
+ul.members > li img {
+  border-radius: 50%
+}
