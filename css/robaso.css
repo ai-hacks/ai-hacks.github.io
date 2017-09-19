@@ -12,8 +12,6 @@
 
 ul#countdown {
   display: flex;
-  margin: 2em auto;
-  padding-bottom: 1em;
   color: #000;
   border: 1px solid #2F2F30;
   border-width: 1px 0;
@@ -36,6 +34,9 @@ ul#countdown li .label {
   font-size: 18px;
   font-size: 1.5vw;
   text-transform: uppercase;
+}
+ul#countdown li .number {
+  line-height: 1;
 }
 
 ul.members {
