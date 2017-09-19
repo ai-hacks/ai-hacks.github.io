@@ -1,4 +1,4 @@
-## Get ready for the second encounter
+# The End is Near
 
 <ul id="countdown">
   <li id="days">
