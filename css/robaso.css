@@ -1,0 +1,10 @@
+.two-col-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.two-col-grid > div { 
+    flex: 1 0 50%;
+    text-align: center;
+    padding: 1em;
+}
