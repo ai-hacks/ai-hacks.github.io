@@ -8,3 +8,29 @@
     text-align: center;
     padding: 1em;
 }
+
+ul#countdown {
+    display: flex;
+    margin: 2em auto;
+    padding-bottom: 1em;
+    color: #000;
+    border: 1px solid #2F2F30;
+    border-width: 1px 0;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+  }
+  ul#countdown li {
+    margin: 0 -3px 0 0;
+    padding: 0;
+    display: inline-block;
+    width: 25%;
+    font-size: 72px;
+    font-size: 6vw;
+    text-align: center;
+  }
+  ul#countdown li .label {
+    color: #2F2F30;
+    font-size: 18px;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+  }

@@ -1,5 +1,25 @@
 
 ## The second encounter
+
+<ul id="countdown">
+  <li id="days">
+    <div class="number">00</div>
+    <div class="label">Days</div>
+  </li>
+  <li id="hours">
+    <div class="number">00</div>
+    <div class="label">Hours</div>
+  </li>
+  <li id="minutes">
+    <div class="number">00</div>
+    <div class="label">Minutes</div>
+  </li>
+  <li id="seconds">
+    <div class="number">00</div>
+    <div class="label">Seconds</div>
+  </li>
+</ul>
+
 ![]({{ site.baseurl }}/images/logo_sprint.jpg)
 
 
