@@ -1,3 +1,9 @@
+.robaso-title {
+  font-size: 3.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
 .two-col-grid {
   display: flex;
   flex-direction: row;
@@ -35,6 +41,7 @@ ul#countdown li .label {
   font-size: 1.5vw;
   text-transform: uppercase;
 }
+
 ul#countdown li .number {
   line-height: 1;
 }

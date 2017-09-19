@@ -1,50 +1,75 @@
----
-layout: default
+--- 
+layout: default 
 ---
 
-<h1>The End is Near</h1>
+<h1 class="robaso-title">The End is Near</h1>
 
 <ul id="countdown">
-  <li id="days">
-    <div class="number">00</div>
-    <div class="label">Days</div>
-  </li>
-  <li id="hours">
-    <div class="number">00</div>
-    <div class="label">Hours</div>
-  </li>
-  <li id="minutes">
-    <div class="number">00</div>
-    <div class="label">Minutes</div>
-  </li>
-  <li id="seconds">
-    <div class="number">00</div>
-    <div class="label">Seconds</div>
-  </li>
+    <li id="days">
+        <div class="number">00</div>
+        <div class="label">Days</div>
+    </li>
+    <li id="hours">
+        <div class="number">00</div>
+        <div class="label">Hours</div>
+    </li>
+    <li id="minutes">
+        <div class="number">00</div>
+        <div class="label">Minutes</div>
+    </li>
+    <li id="seconds">
+        <div class="number">00</div>
+        <div class="label">Seconds</div>
+    </li>
 </ul>
 
 <img src="{{ site.baseurl }}/images/logo_sprint.jpg">
 
+<h2>Blog</h2>
+<ul>
+    <!-- This loops through the paginated posts -->
+    {% for post in paginator.posts %}
+    <li>
+        <a href="{{ post.url }}">{{ post.title }}</a> {{ post.excerpt | strip_html }}
+    </li>
+    {% endfor %}
+</ul>
+
+<!-- Pagination links -->
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a> {% else %}
+    <span>&laquo; Prev</span> {% endif %} {% for page in (1..paginator.total_pages) %} {% if page == paginator.page %}
+    <em>{{ page }}</em> {% elsif page == 1 %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a> {% else %}
+    <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>    {% endif %} {% endfor %} {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a> {% else %}
+    <span>Next &raquo;</span> {% endif %}
+</div>
+{% endif %}
+
+
 <h2>Members</h2>
 <ul class="members">
-{% for member in site.github.organization_members %}
+    {% for member in site.github.organization_members %}
     <li>
         <img src="{{ member.avatar_url }}">
         <a href="{{ member.html_url }}">{{ member.login }}</a>
     </li>
-{% endfor %}
+    {% endfor %}
 </ul>
 
 <h2>Testimonials</h2>
 <div class="two-col-grid">
     <div>
         <blockquote class="twitter-tweet" data-lang="de" data-conversation="none" data-cards="hidden">
-            <p lang="in" dir="ltr"><a href="https://twitter.com/hashtag/ROBASO?src=hash">#ROBASO</a> Lang lebe SOA!</p>&mdash; Niels de Bruijn
-            (@nielsdb) <a href="https://twitter.com/nielsdb/status/832271682043858947">16. Februar 2017</a></blockquote>
+            <p lang="in" dir="ltr"><a href="https://twitter.com/hashtag/ROBASO?src=hash">#ROBASO</a> Lang lebe SOA!</p>&mdash; Niels de Bruijn (@nielsdb)
+            <a href="https://twitter.com/nielsdb/status/832271682043858947">16. Februar 2017</a></blockquote>
     </div>
     <div>
         <blockquote class="twitter-tweet" data-lang="de" data-conversation="none" data-cards="hidden">
-            <p lang="de" dir="ltr">Ich hätte es für 10 Mio in der Hälfte der Zeit gemacht. ¯\_(ツ)_/¯<a href="https://twitter.com/hashtag/robaso?src=hash">#robaso</a>                    <a href="https://twitter.com/Bundesagentur">@bundesagentur</a></p>&mdash; fantastokrat (@fantastokrat)
+            <p lang="de" dir="ltr">Ich hätte es für 10 Mio in der Hälfte der Zeit gemacht. ¯\_(ツ)_/¯<a href="https://twitter.com/hashtag/robaso?src=hash">#robaso</a>                <a href="https://twitter.com/Bundesagentur">@bundesagentur</a></p>&mdash; fantastokrat (@fantastokrat)
             <a href="https://twitter.com/fantastokrat/status/832288113808519169">16. Februar 2017</a></blockquote>
     </div>
     <div>
@@ -55,9 +80,7 @@ layout: default
     </div>
     <div>
         <blockquote class="twitter-tweet" data-lang="de" data-conversation="none" data-cards="hidden">
-            <p lang="de" dir="ltr">Ein Grossprojekt der öffentlichen Hand. Business as usual! 60 Millionen Euro versenkt: <a href="https://twitter.com/hashtag/ROBASO?src=hash">#ROBASO</a>                    heise online <a href="https://t.co/gihonZ6P32">https://t.co/gihonZ6P32</a></p>&mdash; Marco Langlitz
-            (@MarcoLanglitz) <a href="https://twitter.com/MarcoLanglitz/status/833611589404196864">20. Februar 2017</a></blockquote>
+            <p lang="de" dir="ltr">Ein Grossprojekt der öffentlichen Hand. Business as usual! 60 Millionen Euro versenkt: <a href="https://twitter.com/hashtag/ROBASO?src=hash">#ROBASO</a>                heise online <a href="https://t.co/gihonZ6P32">https://t.co/gihonZ6P32</a></p>&mdash; Marco Langlitz (@MarcoLanglitz)
+            <a href="https://twitter.com/MarcoLanglitz/status/833611589404196864">20. Februar 2017</a></blockquote>
     </div>
 </div>
-
-

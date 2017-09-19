@@ -5,3 +5,7 @@ author:
   url: https://github.com/Danny02
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+paginate: 3
+
