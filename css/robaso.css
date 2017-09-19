@@ -4,6 +4,17 @@
   text-align: center;
 }
 
+.header-title {
+  max-width: 13em;
+  width: 100%;
+}
+
+.about {
+  border-bottom: 1px solid;
+  text-align: center;
+  padding: 1em 0
+}
+
 .two-col-grid {
   display: flex;
   flex-direction: row;
