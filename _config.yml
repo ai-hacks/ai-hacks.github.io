@@ -3,3 +3,5 @@ repository: robaso-strikes-back/RobasoStrikesBack
 author:
   name: Daniel Heinrich 
   url: https://github.com/Danny02
+plugins:
+  - jekyll-feed
