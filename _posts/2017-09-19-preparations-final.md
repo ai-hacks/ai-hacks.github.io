@@ -2,7 +2,7 @@
 layout: post
 title: Vorbereitungen laufen
 date: 2017-09-19 16:06:00 +0002
-categories: robaso 24h-sprint
+categories: 24h-sprint robaso
 ---
 
 Pläne wurden geschmieded und erste Ziele festgelegt. Es soll ein Super-Waffe für die VAM Rebellen bei AT entwickelt werden um den Wahnsinningen Altag überleben zu können.
