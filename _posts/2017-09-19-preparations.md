@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vorbereitung auf den Großen Tag
-categories: jekyll update
+categories: robaso 24h-sprint
 ---
 
 Pläne wurden geschmieded und erste Ziele festgelegt. Es soll ein Super-Waffe für die VAM Rebellen bei AT entwickelt werden um den Wahnsinningen Altag überleben zu können.
