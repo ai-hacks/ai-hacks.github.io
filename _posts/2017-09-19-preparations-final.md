@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Vorbereitung auf den Großen Tag
+title: Vorbereitungen laufen
+date: 2017-09-19 16:06:00 +0002
 categories: robaso 24h-sprint
 ---
 
